@@ -1,0 +1,29 @@
+<%#= image_tag "logo", alt: "Le Wagon", width: 200 %>
+
+<div class="logo">
+
+</div>
+<%= link_to("Home", root_path) %>
+
+<div class="card card-size">
+  <img src="https://image.shutterstock.com/image-photo/movie-projector-on-dark-background-260nw-753798850.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@movie.title</h5>
+    <p class="card-text">@movie.desctiption</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Go to Show page</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  Launch demo modal
+</button>
+
+<%= render "modal" %>
